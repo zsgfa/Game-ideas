@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>game ideas</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="cloud.png" type="image/x-icon">
+
+</head>
+<body>
+	<h1>game ideas</h1>
+	<p>you prob came here just for ideas so yes</p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="game">
+		<h1 style="text-align: left;">Game type:</h1>
+		<h3 id="randomGame">Game type:</h3>
+	</div>
+	<br>
+	<br>
+	<div class="dim">
+		<h1 style="text-align: left;">Dimension type:</h1>
+		<h3 id="randomDim">Dimension:</h3>
+	</div>
+	<br>
+	<br>
+	<div class="ran">
+		<h1 style="text-align: left;">Scope:</h1>
+		<h3 id="randomScop">Scope:</h3>
+	</div>
+	
+	<p style="text-align: end;">Copyright© 2022-2023</p>
+
+	<script>
+		const randomGames = ["Shooting","RPG","Survival","Town&City","Comic","Horror","Story"];
+		const randomDimensions = ["2D", "3D"];
+		const randomScope = ["Be together","Help eachother","Limited gameplay","EA","Unlimited gameplay","Spinning"];
+
+		
+		function gamemodeFunction() {
+			document.getElementById("randomGame").innerHTML = randomGames[Math.floor(Math.random() * randomGames.length)]
+			document.getElementById("randomDim").innerHTML = randomDimensions[Math.floor(Math.random() * randomDimensions.length)]
+			document.getElementById("randomScop").innerHTML = randomScope[Math.floor(Math.random() * randomScope.length)]
+		}
+		gamemodeFunction()
+	</script>
+</body>
+</html>
